@@ -3,9 +3,9 @@ from source.BCG_Data_Load_and_Write import DataPlay
 from pyspark.sql import SparkSession
 
 def main():
+    
     """
     Initialising the objects with the necessary modules
-    :return:
     """
     spark = SparkSession.builder.appName("BCG_Case_Study").getOrCreate()
     analysis = BCGAnalysis(spark)
