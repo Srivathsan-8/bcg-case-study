@@ -17,6 +17,10 @@ Similarly when it's a statement for finding the top 5 vehicle makes of such, I w
 
 Along with that we also have a Log Directory which stores the log info of the complete application run. We have built with the python's logging module.
 
+In order for Spark Submit, Please clone the repo and do the necessary,
+
+Thanks !!
+
 The two python scripts in the source directory are for analysis and data read and write plays. The BCG_Analysis Python contains the pyspark code for each analysis as a method and the BCG_Data_Read_and_Write script has methods for reading and writing dataframes and files with config parsing as well. Clear explanation is given as docstring in both the scripts.
 
 Thanks!
