@@ -1,0 +1,18 @@
+2024-10-22 15:23:41,612 - INFO - Created the DataFrame Successfully for the input: person_path
+2024-10-22 15:23:44,995 - INFO - Successfully extracted the first analysis. The count of crashes with at least 2 males dead is: 0
+2024-10-22 15:23:45,027 - INFO - Created the DataFrame Successfully for the input: units_path
+2024-10-22 15:23:46,479 - INFO - Successfully extracted the second analysis. The count of crashes involving two-wheeler is: 781
+2024-10-22 15:23:49,910 - INFO - Successfully extracted the fourth analysis. The count of hit and run with valid licenses: 2616
+2024-10-22 15:23:49,937 - INFO - Created the DataFrame Successfully for the input: damages_path
+2024-10-22 15:23:51,414 - INFO - Successfully extracted the ninth analysis. The Count of Distinct Crash IDs where No Damaged Property was observed and Damage Level (VEH_DMAG_SCL~) is above 4 and car avails Insurance is: 8
+2024-10-22 15:23:52,785 - INFO - Successfully Stored the Analysis in the mentioned path: dbfs:/FileStore/tables/bcg_data/target/Top_Vehicle_Makes_AB_Not_Deployed.csv
+2024-10-22 15:23:52,785 - INFO - Successfully extracted the third analysis and stored in the file.
+2024-10-22 15:23:53,955 - INFO - Successfully Stored the Analysis in the mentioned path: dbfs:/FileStore/tables/bcg_data/target/Female_Not_Involved_State.csv
+2024-10-22 15:23:53,956 - INFO - Successfully extracted the fifth analysis and stored in the file.
+2024-10-22 15:23:53,956 - ERROR - Error during third_to_fifth_injury_model analysis: local variable 'top_vehicle_inj' referenced before assignment
+2024-10-22 15:23:56,624 - INFO - Successfully Stored the Analysis in the mentioned path: dbfs:/FileStore/tables/bcg_data/target/Top_Ethnicity_Vehicle_Body.csv
+2024-10-22 15:23:56,625 - INFO - Successfully extracted the seventh analysis and stored in the file.
+2024-10-22 15:23:58,928 - INFO - Successfully Stored the Analysis in the mentioned path: dbfs:/FileStore/tables/bcg_data/target/Zip_Code_Drunk_Drive.csv
+2024-10-22 15:23:58,928 - INFO - Successfully extracted the eight analysis and stored in the file.
+2024-10-22 15:24:02,004 - INFO - Successfully Stored the Analysis in the mentioned path: dbfs:/FileStore/tables/bcg_data/target/Top_Vehicle_Makes_10Color_25State.csv
+2024-10-22 15:24:02,005 - INFO - Successfully extracted the tenth analysis and stored in the file.
