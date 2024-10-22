@@ -1,12 +1,12 @@
 import configparser
-import sys
 from source.logger import LogCapture
 
-class DataPlay():
+
+class DataPlay:
 
     def __init__(self,spark):
         self.spark = spark
-        self.APP_CONFIG_PATH = "/Workspace/Users/vkksrivathsan@gmail.com/bcg-case-study/config.cfg"
+        self.APP_CONFIG_PATH = "config.cfg"
         self.APP_DETAILS = "BCG_CASE_STUDY"
         self.logg=LogCapture()
 
@@ -41,7 +41,7 @@ class DataPlay():
     
     def df_to_file(self,write_df,f_name):
 
-        """If this method is called it get's the target path and writes the passed dataframe to the passed filename and stores as csv to the target path.
+        """If this method is called it gets the target path and writes the passed dataframe to the passed filename and stores as csv to the target path.
         """
         try:
             config_dict = self.get_app_conf_dict()

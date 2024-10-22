@@ -1,5 +1,5 @@
-from pyspark.sql.types import *
 from pyspark.sql import Window
+from pyspark.sql.types import *
 from pyspark.sql.functions import *
 from source.logger import LogCapture
 from source.BCG_Data_Load_and_Write import DataPlay
@@ -201,7 +201,7 @@ class BCGAnalysis:
             
             top_vehicle_pre_inj=self.units_df.repartition(self.units_df.CRASH_ID).withColumn("Death_And_Inj_Count",col("TOT_INJRY_CNT")+col("DEATH_CNT")).orderBy(col("Death_And_Inj_Count").desc()).distinct()
         
-            win=Window.orderBy(top_vehicle_inj.Death_And_Inj_Count.desc())
+            win=Window.orderBy(top_vehicle_pre_inj.Death_And_Inj_Count.desc())
         
             top_vehicle_inj=top_vehicle_pre_inj.withColumn("rank",dense_rank().over(win)).filter(col("rank").isin([3,4,5])).select(col("VEH_MAKE_ID"))
             
