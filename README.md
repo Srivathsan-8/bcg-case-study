@@ -1,6 +1,6 @@
 Hi All,
 
-This the repo for BCG Case Study on US Accidents. The Source_File_CSV Contains 6 CSV Files from which we have to draw our analysis based on the Problem Statement provided in the mail.
+This the repo for BCG Case Study on US Accidents. The Source_File_CSV Contains 6 CSV Files from which we have to draw our analysis based on the Problem Statement provided in the mail. It's completely a pyspark Dataframe API Coding.
 
 As per the statement I had made sure the input and output is completely config driven from the config.cfg file.
 
@@ -14,5 +14,11 @@ Similarly when it's a statement for finding the top 5 vehicle makes of such, I w
 
 {'Top 5 Vehicle Makes with Airbags Not Deployed and Person Killed': 'The Analysis File Path :Target_Location/Top_Vehicle_Makes_AB_Not_Deployed', 'Top State where Females where not involved': 'The Analysis File Path :Target_Location/Female_Not_Involved_State', 'Top 3_5 Vehicle Makes Contributing to Highest Injury with Death': 'The Analysis File Path :Target_Location/Top_3_5_Inj_Death_Model', 'Top Ethnicity for Each Vehicle Body': 'The Analysis File Path :Target_Location/Top_Ethnicity_Vehicle_Body', 'Top 5 Zip Codes with Crash Contributing to Alcohol': 'The Analysis File Path :Target_Location/Zip_Code_Drunk_Drive', 'Top 5 Vehicle Makes belonging to Top 10 Color and Top 25 States of the Crash and crash due to Speeding': 'The Analysis File Path :Target_Location/Top_Vehicle_Makes_10Color_25State'}
 
+
+Along with that we also have a Log Directory which stores the log info of the complete application run. We have built with the python's logging module.
+
+The two python scripts in the source directory are for analysis and data read and write plays. The BCG_Analysis Python contains the pyspark code for each analysis as a method and the BCG_Data_Read_and_Write script has methods for reading and writing dataframes and files with config parsing as well. Clear explanation is given as docstring in both the scripts.
+
+Thanks!
 
 
